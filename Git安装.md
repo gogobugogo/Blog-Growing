@@ -1,8 +1,8 @@
 ---
 title: Git - Mac安装指南
 date: 2017-12-25
-categories: 工具
 tags: [Git]
+categories: 工具
 ---
 
 

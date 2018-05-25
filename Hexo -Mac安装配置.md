@@ -1,8 +1,8 @@
 ---
 title: Hexo - Mac安装配置
 date: 2017-12-30
-categories: 工具
-tags: [Blog]
+categories: Blog
+tags: [Hexo]
 ---
 
  心血来潮想要写博客，记录、总结一下自己学习过程中遇到的问题，也方便自己后面查阅和复习。现在流行的一些博客网站不够简洁，广告也多，最终决定用Hexo + 模板搭建个人博客，部署在Github。
@@ -68,6 +68,82 @@ e.g.  title：Blog名称
 > theme： next
 
 重新发布后，博客即使用Next主题。
+
+#### 标签
+
+添加标签选项：
+
+> hexo new page tags
+
+编辑/source/[标签目录名]/index.md :
+
+> title: tags
+>
+> date: 2018-05-06 23:16:00
+>
+> type: "tags"
+
+编辑主题配置文件：
+
+> menu：
+>
+> ​    home: / || home
+>
+> ​    tags: /tags/ || tags
+>
+> ​    categories: /categories/ || th
+
+编辑hexo配置文件：
+
+> \# Directory
+>
+> tag_dir: tags
+
+文章关联标签：
+
+> title: 文章标题
+>
+> date: 2018-05-06
+>
+> tags: [tag name]
+
+#### 分类
+
+添加分类选项：
+
+> hexo new page categories
+
+编辑/source/[分类目录名]/index.md:
+
+> title: categories
+>
+> date: 2018-05-06 23:45:00
+>
+> type: "categories"
+
+编辑主题配置文件：
+
+> menu：
+>
+> ​    home: / || home
+>
+> ​    tags: /tags/ || tags
+>
+> ​    categories: /categories/ || th
+
+编辑hexo配置文件：
+
+> \# Directory
+>
+> category_dir: categories
+
+文章关联标签：
+
+> title: 文章标题
+>
+> date: 2018-05-06
+>
+> categories: [category name]
 
 #### 博客文章
 
